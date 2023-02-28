@@ -1,22 +1,22 @@
 package org.example;
 
 import java.util.Scanner;
-import java.lang.*;
 
 
-class creditcard
+class Creditcard
 {
+    Logger l = Logger.getLogger("kawin");
     public static void main(String[]args)
     {
 
         Scanner i = new Scanner(System.in);
 
 
-        System.out.println("enter name");
+        l.info("enter name");
         String name = i.next();
-        System.out.println("enter card no");
+        l.info("enter card no");
         Long cardno = i.nextLong();
-        System.out.println("enter exp date ");
+        l.info("enter exp date ");
         String expdate = i.next();
 
         Long validcardno=1234567890L;
