@@ -3,34 +3,6 @@ package org.example;
 import java.util.Scanner;
 import java.lang.*;
 
-class credit implements Cloneable
-{
-    String name;
-    Long cardno;
-    String expdate;
-    credit(String name,Long cardno,String expdate)
-    {
-        this.name=name;
-        this.cardno=cardno;
-        this.expdate=expdate;
-    }
-    boolean equals(Long validcardno)
-    {
-        return cardno.equals(validcardno);
-    }
-    credit cd()
-    {
-        try
-        {
-          return (credit) super.clone();
-        }
-        catch (CloneNotSupportedException e)
-        {
-            System.out.println("cloned");
-            return this;
-        }
-    }
-}
 
 class creditcard
 {
