@@ -24,7 +24,7 @@ class Creditcard
         credit ob1 = new credit(name,cardno,expdate);
         credit ob2 = ob1.cd();
 
-        System.out.println(ob2.equals(validcardno));
+        l.info(ob2.equals(validcardno));
         i.close();
 
 
